@@ -1,1 +1,1 @@
-Script made by MySeR
+Python code made by MySeR
