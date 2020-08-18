@@ -1,1 +1,1 @@
-# Characters-Creator
+Script made by MySeR
