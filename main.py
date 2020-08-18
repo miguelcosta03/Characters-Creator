@@ -6,7 +6,6 @@ from tkinter import colorchooser
 win = Tk()
 win['background'] = '#2E4053'
 
-
 def b_start_click():
     b_start.destroy()
     b_settings.destroy()
@@ -53,7 +52,6 @@ def b_start_click():
     lb_job = Label(win, text="Character's job")
     lb_job.place(x=260, y=325)
 
-
 def settings_click():
     set_win = Toplevel()
     set_win['background'] = '#2E4053'
@@ -94,23 +92,22 @@ def settings_click():
     b_change_background_color = Button(set_win, text='Change Background Color', command=b_change_background_color_click)
     b_change_background_color.place(x=200, y=50)
 
-    set_win.geometry('800x600')
+    set_win.geometry('400x100')
     set_win.mainloop()
-
 
 def b_quit_click():
     win.destroy()
 
-
 # Main Page GUI
-b_start = Button(win, text='Start', command=b_start_click, width=10)
-b_start.place(x=350, y=280)
+if __name__ == "__main__":
+    b_start = Button(win, text='Start', command=b_start_click, width=10)
+    b_start.place(x=350, y=280)
 
-b_settings = Button(win, text='Settings', command=settings_click, width=10)
-b_settings.place(x=350, y=330)
+    b_settings = Button(win, text='Settings', command=settings_click, width=10)
+    b_settings.place(x=350, y=330)
 
-b_quit = Button(win, text='Quit', command=b_quit_click, width=10)
-b_quit.place(x=350, y=380)
+    b_quit = Button(win, text='Quit', command=b_quit_click, width=10)
+    b_quit.place(x=350, y=380)
 
-win.geometry('800x600')
-win.mainloop()
+    win.geometry('800x600')
+    win.mainloop()
